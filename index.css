@@ -1,0 +1,517 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden;
+
+    color: white;
+}
+
+.header {
+    position: sticky;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #012;
+    color: #fff;
+    padding: 5px 0;
+    z-index: 1000;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #fff;
+    padding-left: 1rem;
+}
+
+#navbar a:hover {
+    color: #994D1C;
+    transition: all 0.5s;
+}
+
+.logo a img {
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 1px solid #fff;
+    border-radius: 50%;
+
+}
+
+.icon i {
+    cursor: pointer;
+    padding-left: 1rem;
+}
+
+#navbar .close {
+    display: none;
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    cursor: pointer;
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+.header .menu {
+    display: none;
+    visibility: hidden;
+    font-size: 1.5rem;
+}
+
+/* ------------headerEnd----------- */
+
+
+/* ---------HomePage------------ */
+#home {
+    height: 100vh;
+    width: 100%;
+
+    background-image: url(./image/landingpage.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.container {
+    position: absolute;
+    left: 8%;
+    top: 10%;
+    width: 50%;
+    height: 80vh;
+    padding: 0 .8rem 0 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+
+
+}
+
+.container h1 {
+    font-size: 5rem;
+
+}
+
+h1 span {
+    color: #994D1C;
+}
+
+p {
+    font-size: 0.8rem;
+
+
+}
+
+#button {
+    width: 12rem;
+    height: 2.5rem;
+    margin-top: 2.5rem;
+    background-color: #994D1C;
+    color: #fff;
+
+    border: none;
+
+}
+
+#button:hover,
+#button:active {
+    background-color: #fff;
+    color: #994D1C;
+    transition: all 0.5s;
+}
+
+/* ---------homePageEnd------------ */
+
+
+/* -----------------responsivePartEnd---------- */
+
+
+/* <!-- -----------aboutUs----------- --> */
+/* (all section background are handled from here) */
+#aboutUs,
+#menu,
+#product,
+#review,
+#contact,
+#blog {
+    width: 100%;
+    padding: 1rem 0 1rem 0;
+    display: flex;
+    align-items: center;
+    background: #012;
+    flex-direction: column;
+
+
+
+}
+
+#aboutUs .special {
+    width: 90%;
+
+    display: flex;
+    background-color: #2B2A4C;
+    justify-content: space-evenly;
+    /* border: 1px solid green; */
+}
+
+.special img {
+    height: 20rem;
+    width: 50%;
+
+}
+
+.special .content {
+    margin: 1rem;
+    text-align: left;
+    padding: 1rem;
+}
+
+.heading {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.content p {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+}
+
+/* ----------menuSection--------------- */
+/* (all box model handel from here) */
+#menu-box,
+.product-box,
+.review-box,
+.contact-box,
+.blog-box,
+.contact-box {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border: 1 px solid red;
+}
+
+.menu-list,
+.product-list,
+.review-list,
+.blog-list {
+    display: flex;
+    flex-basis: 30%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 0 1rem 0;
+    gap: 0.5rem;
+    border: 1px solid #2B2A4C;
+}
+
+.menu-img img,
+.customer-img img {
+    height: 4rem;
+    width: 4rem;
+    background-color: white;
+    border-radius: 50%;
+    margin: 1rem 0 1rem 0;
+}
+
+.menu-list p {
+    font-size: 0.8rem;
+}
+
+.menu-list p span,
+.product-list p span {
+    font-size: 0.6rem;
+    margin-left: 0.5rem;
+}
+
+/* -------------productSection-------------- */
+.product-img img {
+    width: 100%;
+    height: 10rem;
+    background-color: #fff;
+    margin-top: 0.5rem;
+}
+
+.product-icon i {
+    border: 2px solid #2B2A4C;
+    margin-left: 0.5rem;
+    padding: 0.5rem;
+}
+
+.product-icon i:hover {
+    background-color: #994D1C;
+    color: #fff;
+    border: 2px solid #994D1C;
+    border-radius: 50%;
+}
+
+/* --------------customerReview--------- */
+.review-box {
+
+    background-color: #2B2A4C;
+}
+
+.review-list {
+    border: 1px solid #994D1C;
+    padding: 0.8rem;
+    margin: 0.5rem;
+    border-radius: 10% 0 10% 0;
+}
+
+.fa-quote-left {
+    color: #994D1C;
+    font-size: 2rem;
+}
+
+.star {
+    color: #994D1C;
+}
+/* -------------contactPage------------ */
+.contact-box{
+    width: 90%;
+    /* border: 2px solid #2B2A4C; */
+    padding: 0.8rem 0;
+}
+.map{
+    border: 1px solid #994D1C;
+    padding:0.5rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+input{
+    height: 2rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 2rem;
+    padding-left: 0.5rem;
+    border-bottom: 2px solid #994D1C;
+    transition: all .3s ease-in-out;
+    
+}input:hover,
+input:active{
+        border-bottom: 2px solid#2B2A4C;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+    
+}
+#number,#address{
+    margin-left: 1.3rem;
+}
+/* --------blogs-------- */
+.blog-list h5 {
+    color: #994D1C;
+}
+
+.blog-list p {
+    padding-left: 0.5rem;
+}
+
+.blog-list img {
+    margin-top: -1rem;
+    width: 100%;
+    height: 14rem;
+
+    background-color: #fff;
+}
+
+/* -------------footer------------ */
+.footer {
+    background-color: #2B2A4C;
+    width: 100%;
+}
+
+.footer-icon {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.footer-icon i {
+    height: 2rem;
+    width: 2rem;
+    background-color: #994D1C;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.footer .navbtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    gap: 1rem;
+    padding-bottom: 2rem;
+   
+}
+
+.footer .navbtn a {
+    padding: 0.5rem 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #994D1C;
+
+}
+
+.footer .navbtn a:hover {
+    color: #fff;
+    background-color: #994D1C;
+
+}
+
+.footer .policy {
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 1.5rem;
+
+}
+
+.footer .policy p span {
+    color: #994D1C;
+}
+
+
+/* ----------------responsiveDesign----------- */
+
+@media(max-width:991px) {
+
+    html {
+        font-size: 75%;
+    }
+
+    .container {
+        margin-top: 2rem;
+    }
+
+
+}
+
+
+/* -------mobile-phone------- */
+@media(max-width:768px) {
+
+    html {
+        font-size: 60%;
+    }
+
+    .header {
+        position: relative;
+    }
+
+    .header .menu {
+        display: inline-block;
+        visibility: visible;
+        font-size: 1.8rem;
+    }
+
+    #navbar .close {
+        display: inline-block;
+        color: black;
+        font-size: 1.8rem;
+    }
+
+    .icon i {
+        display: none;
+    }
+
+    #navbar {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 30%;
+        height: 60%;
+        background-color: aliceblue;
+        gap: 1.5rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: all 0.5s linear;
+
+    }
+
+    .header #navbar a {
+        color: black;
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-left: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #2B2A4C;
+
+    }
+
+
+    .container {
+
+        height: 80%;
+
+    }
+
+    .menu-list,
+    .product-list,
+    .review-list,
+    .blog-list {
+
+        flex-basis: 45%;
+
+    }
+
+
+}
+
+/* ==================== */
+#navbar.active {
+    right: 0;
+}
+
+/* ==================== */
+@media(max-width:450px) {
+
+    html {
+        font-size: 45%;
+    }
+
+    .menu-list,
+    .product-list,
+    .review-list,
+    .blog-list {
+
+        flex-basis: 70%;
+
+
+    }
+}
